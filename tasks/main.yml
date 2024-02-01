@@ -1,0 +1,51 @@
+---
+# tasks file for nfs_server
+- name: Update repositories cache and install NFS
+  ansible.builtin.apt:
+    name: nfs-kernel-server
+    update_cache: yes
+  become: true
+
+- name: Create files directory in /opt
+  ansible.builtin.file:
+    path: /opt/files
+    state: directory
+    mode: '0777'
+  become: true
+
+- name: Echo folder location in /etc/exports
+  shell: echo "/opt/files      *(rw,sync,subtree_check)" >> /home/rh/exports
+
+- name: Move custom exports file to /etc/exports
+  ansible.builtin.copy:
+    src: /home/rh/exports
+    dest: /etc/exports
+    remote_src: yes
+    owner: root
+    group: root
+    mode: '0644'
+  become: true
+
+- name: Daemon reload
+  ansible.builtin.systemd:
+    daemon_reload: true
+  become: true
+
+- name: Enable and start nfs.service
+  ansible.builtin.service:
+    name: nfs-server
+    enabled: yes
+    state: started
+  become: true
+
+- name: Allow nfs
+  community.general.ufw:
+    rule: allow
+    port: 2049
+    proto: any
+  become: true
+
+- name: Reboot machine and send a message
+  ansible.builtin.reboot:
+    msg: "Rebooting machine in 5 seconds"
+  become: true
