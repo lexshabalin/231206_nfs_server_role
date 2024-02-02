@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex">
+        <style>html {background-color: #fff}</style>
+        <link rel="stylesheet" href="../../../../style.css">
+        <title>public/static/image/download.html · django-filesharing · GitFront</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="location">
+                <a href="../../../..">django-filesharing</a> /
+                <a href="../../../../tree/public/">public</a> /
+                <a href="../../../../tree/public/static/">static</a> /
+                <a href="../../../../tree/public/static/image/">image</a> /
+                <span>download.html</span>
+            </div>
+
+            <div class="blob-view">
+                <div class="header">
+                    <div>download.html</div>
+                    <div class="last">
+                        <a class="btn" href="../../../../raw/public/static/image/download.html">Raw</a>
+                    </div>
+                </div>
+                <div class="content ">
+                    <pre class="highlight-chroma"><span class="highlight-cp">&lt;!DOCTYPE html&gt;</span>
+<span class="highlight-p">&lt;</span><span class="highlight-nt">html</span> <span class="highlight-na">lang</span><span class="highlight-o">=</span><span class="highlight-s">&#34;en&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+
+<span class="highlight-p">&lt;</span><span class="highlight-nt">head</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">meta</span> <span class="highlight-na">charset</span><span class="highlight-o">=</span><span class="highlight-s">&#34;UTF-8&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">meta</span> <span class="highlight-na">http-equiv</span><span class="highlight-o">=</span><span class="highlight-s">&#34;X-UA-Compatible&#34;</span> <span class="highlight-na">content</span><span class="highlight-o">=</span><span class="highlight-s">&#34;IE=edge&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">meta</span> <span class="highlight-na">name</span><span class="highlight-o">=</span><span class="highlight-s">&#34;viewport&#34;</span> <span class="highlight-na">content</span><span class="highlight-o">=</span><span class="highlight-s">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">title</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>Document<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">title</span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">link</span> <span class="highlight-na">href</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&#34;</span> <span class="highlight-na">rel</span><span class="highlight-o">=</span><span class="highlight-s">&#34;stylesheet&#34;</span>
+    <span class="highlight-na">integrity</span><span class="highlight-o">=</span><span class="highlight-s">&#34;sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&#34;</span> <span class="highlight-na">crossorigin</span><span class="highlight-o">=</span><span class="highlight-s">&#34;anonymous&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-c">&lt;!--</span><span class="highlight-c"> &lt;link href=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&#34; rel=&#34;stylesheet&#34; integrity=&#34;sha384</span><span class="highlight-c">-</span><span class="highlight-c">1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&#34; crossorigin=&#34;anonymous&#34;&gt; </span><span class="highlight-c">--&gt;</span>
+
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">style</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+    <span class="highlight-c">/**
+</span><span class="highlight-c"> * FilePond Custom Styles
+</span><span class="highlight-c"> */</span>
+    <span class="highlight-p">.</span><span class="highlight-nc">filepond--drop-label</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">color</span><span class="highlight-p">:</span> <span class="highlight-mh">#4c4e53</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-p">.</span><span class="highlight-nc">filepond--label-action</span> <span class="highlight-p">{</span>
+      <span class="highlight-kp">-webkit-</span><span class="highlight-k">text-decoration-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#babdc0</span><span class="highlight-p">;</span>
+      <span class="highlight-k">text-decoration-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#babdc0</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-p">.</span><span class="highlight-nc">filepond--panel-root</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">border-radius</span><span class="highlight-p">:</span> <span class="highlight-mi">2</span><span class="highlight-kt">em</span><span class="highlight-p">;</span>
+      <span class="highlight-k">background-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#edf0f4</span><span class="highlight-p">;</span>
+      <span class="highlight-k">height</span><span class="highlight-p">:</span> <span class="highlight-mi">1</span><span class="highlight-kt">em</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-p">.</span><span class="highlight-nc">filepond--item-panel</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">background-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#595e68</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-p">.</span><span class="highlight-nc">filepond--drip-blob</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">background-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#7f8a9a</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-c">/**
+</span><span class="highlight-c"> * Page Styles
+</span><span class="highlight-c"> */</span>
+    <span class="highlight-nt">html</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">padding</span><span class="highlight-p">:</span> <span class="highlight-mi">3</span><span class="highlight-kt">vh</span> <span class="highlight-mi">0</span> <span class="highlight-mi">0</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+
+    <span class="highlight-nt">body</span> <span class="highlight-p">{</span>
+      <span class="highlight-k">max-width</span><span class="highlight-p">:</span> <span class="highlight-mi">28</span><span class="highlight-kt">em</span><span class="highlight-p">;</span>
+      <span class="highlight-k">margin</span><span class="highlight-p">:</span> <span class="highlight-mi">0</span> <span class="highlight-kc">auto</span><span class="highlight-p">;</span>
+      <span class="highlight-k">background-color</span><span class="highlight-p">:</span> <span class="highlight-mh">#03a9f4</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span>
+    <span class="highlight-p">.</span><span class="highlight-nc">background</span> <span class="highlight-p">{</span>
+
+  <span class="highlight-k">border-radius</span><span class="highlight-p">:</span> <span class="highlight-mi">5</span><span class="highlight-kt">px</span><span class="highlight-p">;</span>
+  <span class="highlight-k">display</span><span class="highlight-p">:</span> <span class="highlight-kc">flex</span><span class="highlight-p">;</span>
+  <span class="highlight-k">align-items</span><span class="highlight-p">:</span> <span class="highlight-kc">center</span><span class="highlight-p">;</span>
+  <span class="highlight-k">justify-content</span><span class="highlight-p">:</span> <span class="highlight-kc">center</span><span class="highlight-p">;</span>
+<span class="highlight-p">}</span>
+ <span class="highlight-p">.</span><span class="highlight-nc">clipboard</span> <span class="highlight-p">{</span>
+  <span class="highlight-k">border</span><span class="highlight-p">:</span> <span class="highlight-mi">0</span><span class="highlight-p">;</span>
+  <span class="highlight-k">padding</span><span class="highlight-p">:</span> <span class="highlight-mi">15</span><span class="highlight-kt">px</span><span class="highlight-p">;</span>
+  <span class="highlight-k">border-radius</span><span class="highlight-p">:</span> <span class="highlight-mi">3</span><span class="highlight-kt">px</span><span class="highlight-p">;</span>
+  <span class="highlight-k">background-image</span><span class="highlight-p">:</span> <span class="highlight-nb">linear-gradient</span><span class="highlight-p">(</span><span class="highlight-mi">135</span><span class="highlight-kt">deg</span><span class="highlight-p">,</span> <span class="highlight-mh">#FDEB71</span> <span class="highlight-mi">10</span><span class="highlight-kt">%</span><span class="highlight-p">,</span> <span class="highlight-mh">#F8D800</span> <span class="highlight-mi">100</span><span class="highlight-kt">%</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+  <span class="highlight-k">cursor</span><span class="highlight-p">:</span> <span class="highlight-kc">pointer</span><span class="highlight-p">;</span>
+  <span class="highlight-k">color</span><span class="highlight-p">:</span> <span class="highlight-mh">#04048c</span><span class="highlight-p">;</span>
+  <span class="highlight-k">font-family</span><span class="highlight-p">:</span> <span class="highlight-s2">&#34;Karla&#34;</span><span class="highlight-p">,</span> <span class="highlight-kc">sans-serif</span><span class="highlight-p">;</span>
+  <span class="highlight-k">font-size</span><span class="highlight-p">:</span> <span class="highlight-mi">16</span><span class="highlight-kt">px</span><span class="highlight-p">;</span>
+  <span class="highlight-k">position</span><span class="highlight-p">:</span> <span class="highlight-kc">relative</span><span class="highlight-p">;</span>
+  <span class="highlight-k">top</span><span class="highlight-p">:</span> <span class="highlight-mi">0</span><span class="highlight-p">;</span>
+  <span class="highlight-k">transition</span><span class="highlight-p">:</span> <span class="highlight-kc">all</span> <span class="highlight-mf">0.2</span><span class="highlight-kt">s</span> <span class="highlight-kc">ease</span><span class="highlight-p">;</span>
+<span class="highlight-p">}</span>
+<span class="highlight-nt">body</span> <span class="highlight-p">.</span><span class="highlight-nc">clipboard</span><span class="highlight-p">:</span><span class="highlight-nd">hover</span> <span class="highlight-p">{</span>
+  <span class="highlight-k">top</span><span class="highlight-p">:</span> <span class="highlight-mi">2</span><span class="highlight-kt">px</span><span class="highlight-p">;</span>
+<span class="highlight-p">}</span>
+<span class="highlight-nt">body</span> <span class="highlight-nt">p</span> <span class="highlight-p">{</span>
+  <span class="highlight-k">font-weight</span><span class="highlight-p">:</span> <span class="highlight-mi">700</span><span class="highlight-p">;</span>
+<span class="highlight-p">}</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">style</span><span class="highlight-p">&gt;</span>
+<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">head</span><span class="highlight-p">&gt;</span>
+
+<span class="highlight-p">&lt;</span><span class="highlight-nt">body</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">link</span> <span class="highlight-na">href</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://unpkg.com/filepond/dist/filepond.css&#34;</span> <span class="highlight-na">rel</span><span class="highlight-o">=</span><span class="highlight-s">&#34;stylesheet&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">link</span> <span class="highlight-na">href</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css&#34;</span> <span class="highlight-na">rel</span><span class="highlight-o">=</span><span class="highlight-s">&#34;stylesheet&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://cdnjs.cloudflare.com/ajax/libs/filepond/4.30.3/filepond.min.js&#34;</span>
+    <span class="highlight-na">integrity</span><span class="highlight-o">=</span><span class="highlight-s">&#34;sha512-AuMJiyTn/5k+gog21BWPrcoAC+CgOoobePSRqwsOyCSPo3Zj64eHyOsqDev8Yn9H45WUJmzbe9RaLTdFKkO0KQ==&#34;</span>
+    <span class="highlight-na">crossorigin</span><span class="highlight-o">=</span><span class="highlight-s">&#34;anonymous&#34;</span> <span class="highlight-na">referrerpolicy</span><span class="highlight-o">=</span><span class="highlight-s">&#34;no-referrer&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span><span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span><span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://unpkg.com/jquery-filepond/filepond.jquery.js&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span><span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span><span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+
+
+    <span class="highlight-p">&lt;</span><span class="highlight-nt">div</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;text-center&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+
+        <span class="highlight-p">&lt;</span><span class="highlight-nt">img</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;download.svg&#34;</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;img-fluid img-responsive&#34;</span> <span class="highlight-na">style</span><span class="highlight-o">=</span><span class="highlight-s">&#34;height: 200px;&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+    <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">div</span><span class="highlight-p">&gt;</span>
+
+
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">div</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;carad mt-5&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+    <span class="highlight-p">&lt;</span><span class="highlight-nt">div</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;card-bodqy&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+      
+
+        <span class="highlight-p">&lt;</span><span class="highlight-nt">div</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;background&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+            <span class="highlight-p">&lt;</span><span class="highlight-nt">center</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+              <span class="highlight-p">&lt;</span><span class="highlight-nt">button</span> <span class="highlight-na">class</span><span class="highlight-o">=</span><span class="highlight-s">&#34;clipboard&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>Download Files<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">button</span><span class="highlight-p">&gt;</span>
+              <span class="highlight-p">&lt;</span><span class="highlight-nt">p</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>Have you already clicked?<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">p</span><span class="highlight-p">&gt;</span>
+            <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">center</span><span class="highlight-p">&gt;</span>
+            <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">div</span><span class="highlight-p">&gt;</span>
+
+      <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">div</span><span class="highlight-p">&gt;</span>
+    <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">div</span><span class="highlight-p">&gt;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">div</span><span class="highlight-p">&gt;</span>
+
+
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span> <span class="highlight-na">src</span><span class="highlight-o">=</span><span class="highlight-s">&#34;https://unpkg.com/filepond/dist/filepond.min.js&#34;</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span><span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+
+
+
+
+
+  <span class="highlight-p">&lt;</span><span class="highlight-nt">script</span><span class="highlight-p"></span><span class="highlight-p">&gt;</span>
+    <span class="highlight-nx">$</span><span class="highlight-p">(</span><span class="highlight-kd">function</span> <span class="highlight-p">(</span><span class="highlight-p">)</span> <span class="highlight-p">{</span>
+      <span class="highlight-nx">$</span><span class="highlight-p">.</span><span class="highlight-nx">fn</span><span class="highlight-p">.</span><span class="highlight-nx">filepond</span><span class="highlight-p">.</span><span class="highlight-nx">registerPlugin</span><span class="highlight-p">(</span><span class="highlight-nx">FilePondPluginImagePreview</span><span class="highlight-p">,</span> <span class="highlight-p">)</span><span class="highlight-p">;</span>
+      <span class="highlight-nx">$</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;.my-pond&#39;</span><span class="highlight-p">)</span><span class="highlight-p">.</span><span class="highlight-nx">filepond</span><span class="highlight-p">(</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+      <span class="highlight-nx">$</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;.my-pond&#39;</span><span class="highlight-p">)</span><span class="highlight-p">.</span><span class="highlight-nx">filepond</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;allowMultiple&#39;</span><span class="highlight-p">,</span> <span class="highlight-kc">true</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+      <span class="highlight-nx">$</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;.my-pond&#39;</span><span class="highlight-p">)</span><span class="highlight-p">.</span><span class="highlight-nx">on</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;FilePond:addfile&#39;</span><span class="highlight-p">,</span> <span class="highlight-kd">function</span> <span class="highlight-p">(</span><span class="highlight-nx">e</span><span class="highlight-p">)</span> <span class="highlight-p">{</span>
+        <span class="highlight-nx">console</span><span class="highlight-p">.</span><span class="highlight-nx">log</span><span class="highlight-p">(</span><span class="highlight-s1">&#39;file added event&#39;</span><span class="highlight-p">,</span> <span class="highlight-nx">e</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+      <span class="highlight-p">}</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+    <span class="highlight-p">}</span><span class="highlight-p">)</span><span class="highlight-p">;</span>
+  <span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">script</span><span class="highlight-p">&gt;</span>
+
+<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">body</span><span class="highlight-p">&gt;</span>
+
+<span class="highlight-p">&lt;</span><span class="highlight-p">/</span><span class="highlight-nt">html</span><span class="highlight-p">&gt;</span></pre>
+                </div>
+            </div>
+
+            <div class="space"></div>
+            <div class="footer">
+                Powered by <a href="https://gitfront.io">GitFront</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex">
+        <style>html {background-color: #fff}</style>
+        <link rel="stylesheet" href="../../../../style.css">
+        <title>public/static/image/undraw.svg · django-filesharing · GitFront</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="location">
+                <a href="../../../..">django-filesharing</a> /
+                <a href="../../../../tree/public/">public</a> /
+                <a href="../../../../tree/public/static/">static</a> /
+                <a href="../../../../tree/public/static/image/">image</a> /
+                <span>undraw.svg</span>
+            </div>
+
+            <div class="blob-view">
+                <div class="header">
+                    <div>undraw.svg</div>
+                    <div class="last">
+                        <a class="btn" href="../../../../raw/public/static/image/undraw.svg">Raw</a>
+                    </div>
+                </div>
+                <div class="content ">
+                    <div class="content-img">
+                        <img src="../../../../raw/public/static/image/undraw.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="space"></div>
+            <div class="footer">
+                Powered by <a href="https://gitfront.io">GitFront</a>
+            </div>
+        </div>
+    </body>
+</html>

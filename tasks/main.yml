@@ -13,6 +13,34 @@
     mode: '0777'
   become: true
 
+- name: Create image directory in /opt/files
+  ansible.builtin.file:
+    path: /opt/files/image
+    state: directory
+    mode: '0777'
+  become: true
+
+- name: Copy download.html     
+  template:
+    src: "{{ role_path }}/files/download.html"
+    dest: "/opt/files/image"
+    mode: '0664'
+  become: true
+
+- name: Copy download.svg             
+  template:
+    src: "{{ role_path }}/files/download.svg"
+    dest: "/opt/files/image"
+    mode: '0664'
+  become: true
+
+- name: Copy undraw.svg 
+  template:
+    src: "{{ role_path }}/files/undraw.svg"
+    dest: "/opt/files/image"
+    mode: '0664'
+  become: true
+
 - name: Echo folder location in /etc/exports
   shell: echo "/opt/files      *(rw,sync,subtree_check)" >> /home/rh/exports
 
@@ -31,13 +59,6 @@
     daemon_reload: true
   become: true
 
-- name: Enable and start nfs.service
-  ansible.builtin.service:
-    name: nfs-server
-    enabled: yes
-    state: started
-  become: true
-
 - name: Allow nfs
   community.general.ufw:
     rule: allow
@@ -45,7 +66,9 @@
     proto: any
   become: true
 
-- name: Reboot machine and send a message
-  ansible.builtin.reboot:
-    msg: "Rebooting machine in 5 seconds"
+- name: Enable and start nfs.service
+  ansible.builtin.service:
+    name: nfs-server
+    enabled: yes
+    state: restarted
   become: true
